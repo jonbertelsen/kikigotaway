@@ -1,14 +1,18 @@
+import { Col, Row } from "react-bootstrap";
 import BurgerMenu from "./BurgerMenu";
 
-function Header()
+
+export default function Header()
 {
     return (
-        <div className="header">
-            <BurgerMenu />
-            <h1>Kiki Gotaway</h1>
-
-        </div>
+        <Row className="mt-4">
+            <Col>
+                <h1 class="logo">Kiki Gotaway</h1>
+            </Col>
+            <Col>
+                <BurgerMenu />
+            </Col>
+        </Row>
     );
 }
 
-export default Header;

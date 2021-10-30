@@ -1,27 +1,118 @@
 /* Kiki Gotaway styles */
 
-.header {
-  border-bottom: 2px solid black;
-  padding-left: 10px;
+.logo {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 36px !important;
+}
+
+h2 {
+  font-size: 20px !important;
 }
 
 .burgermenu {
-  border: 2px solid black;
   width: 30px;
   height: 30px;
+  margin-top: 10px;
   float: right;
   margin-right: 20px;
 }
 
 .slider {
-  border: 2px solid black;
-  height: 100px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  border-top: 2px solid black;
 }
 
 .menuitem {
-  border: 2px solid black;
-  height: 70px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  height: 90px;
   padding: 20px;
+}
+
+.categoryButton {
+  margin-right: 15px;
+  font-size: 20px !important;
+  margin-bottom: 15px;
+  padding: 4px !important;
+  font-weight: bold !important;
+  border: 2px solid black !important;
+}
+
+.dropdown-toggle {
+  font-size: 20px !important;
+  margin-bottom: 15px;
+  padding: 4px !important;
+  font-weight: bold !important;
+  border: 2px solid black !important;
+}
+.btn-primary {
+  background-color: #8cfa4c !important;
+  color: black !important;
+}
+
+#cases {
+  margin-bottom: 50px;
+}
+
+.caseDiv {
+  margin-top: 2px;
+  font-weight: bold;
+  padding: 4px !important;
+  outline: 2px solid black;
+  border: 0px;
+  width: auto;
+  float: left;
+  font-size: 20px;
+}
+
+.component {
+  padding: 20px;
+}
+
+.icon-x {
+  font-size: 18px;
+  padding-bottom: 2px;
+}
+
+.btn-outline-dark {
+  color: #000;
+}
+.btn-outline-dark:hover {
+  color: silver !important;
+}
+
+.clear {
+  clear: both;
+}
+
+.accordion-button {
+  font-size: 48px !important;
+  color: black !important;
+  background-color: #cccccc !important;
+}
+
+.accordion-button::after {
+  width: 1.5em !important;
+  height: 1.5em !important;
+  background-size: 1.5em !important;
+  transition: none !important;
+  background-image: url(images/arrowdown.svg) !important;
+}
+
+.accordion-button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.collapsed {
+  background-color: white !important;
+  color: black !important;
+}
+
+.accordion-item {
+  border: none !important;
+  border-top: solid 2px black !important;
+  border-bottom: solid 2px black !important;
 }
