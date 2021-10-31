@@ -1,5 +1,15 @@
 /* Kiki Gotaway styles */
 
+/* Home made accordion */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Other stuff */
+
 .logo {
   font-weight: bold;
 }
@@ -13,10 +23,11 @@ h2 {
 }
 
 .burgermenu {
-  width: 30px;
   height: 30px;
-  margin-top: 10px;
-  float: right;
+  margin-right: 10px;
+}
+
+.menu {
   margin-right: 20px;
 }
 
@@ -48,7 +59,7 @@ h2 {
   border: 2px solid black !important;
 }
 .btn-primary {
-  background-color: #8cfa4c !important;
+  background-color: #00ff6a !important;
   color: black !important;
 }
 
@@ -85,34 +96,4 @@ h2 {
 
 .clear {
   clear: both;
-}
-
-.accordion-button {
-  font-size: 48px !important;
-  color: black !important;
-  background-color: #cccccc !important;
-}
-
-.accordion-button::after {
-  width: 1.5em !important;
-  height: 1.5em !important;
-  background-size: 1.5em !important;
-  transition: none !important;
-  background-image: url(images/arrowdown.svg) !important;
-}
-
-.accordion-button:focus {
-  outline: none !important;
-  box-shadow: none !important;
-}
-
-.collapsed {
-  background-color: white !important;
-  color: black !important;
-}
-
-.accordion-item {
-  border: none !important;
-  border-top: solid 2px black !important;
-  border-bottom: solid 2px black !important;
 }

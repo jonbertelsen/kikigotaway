@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap');
+
+.accordionContainer {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+/* Style the accordion section */
+.accordion__section {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  border-top: 2px solid black;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  transition: background-color 0.1s ease;
+}
+
+.accordion__small {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid black;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  transition: background-color 0.1s ease;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.accordion:hover,
+.active {
+  background-color: #cccccc;
+}
+.active__small {
+  background-color: #00ff6a;
+}
+
+/* Style the accordion content title */
+.accordion__title {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+}
+
+.accordion__title__small {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+/* Style the accordion chevron icon */
+.accordion__icon {
+  margin-left: auto;
+  transition: transform 0.1s ease;
+}
+
+/* Style to rotate icon when state is active */
+.rotate {
+  transform: rotate(90deg);
+}
+
+/* Style the accordion content panel. Note: hidden by default */
+.accordion__content {
+  background-color: white;
+  overflow: hidden;
+  transition: max-height 0.1s ease;
+  /*border-left: 1px solid black;
+  border-right: 1px solid black;*/
+}
+
+/* Style the accordion content text */
+.accordion__text {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 18px;
+}

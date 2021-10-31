@@ -3,7 +3,6 @@ import { Row, Col, Dropdown, DropdownButton } from 'react-bootstrap'
 import Image from 'react-bootstrap/Image'
 import more from '../images/more_from_archive.png'
 import { categories, cases } from '../includes/categories'
-import { ArrowDown } from 'react-bootstrap-icons'
 
 export default function Experience()
 {
@@ -18,6 +17,17 @@ export default function Experience()
         event.preventDefault()
         setActiveCategory(event.target.id)
     }
+
+    function getSelectorCategoryColor(category)
+    {
+        return activeCategory === category.name ? catColorMap.get(activeCategory) : 'white'
+    }
+
+    function getCategoryColor(cases)
+    {
+        return activeCategory === cases.category ? catColorMap.get(activeCategory) : 'white'
+    }
+
 
     function handleDropdownSelect(selectedValue)
     {
@@ -44,18 +54,20 @@ export default function Experience()
 
                     <div className="d-none d-lg-block">
                         {categories.map(c =>
-                            <button className="categoryButton btn btn-outline-dark rounded-lg" id={c.name} key={c.name}
-                                style={{ backgroundColor: activeCategory === c.name ? catColorMap.get(activeCategory) : 'white' }}
-                                onClick={handleCategoryClicked}> {c.name} </button>
-                        )
-                        }
+                            <button className="categoryButton btn btn-outline-dark" id={c.name} key={c.name}
+                                style={{ backgroundColor: getSelectorCategoryColor(c) }}
+                                onClick={handleCategoryClicked}>
+                                {c.name}
+                            </button>)}
                     </div>
 
                     <div className="d-lg-none">
                         <DropdownButton onSelect={handleDropdownSelect} id="dropdown" title="Pick a customer category">
-                            {categories.map(c => <Dropdown.Item id={c.name} eventKey={c.name} key={c.name}>{c.name}</Dropdown.Item>
-                            )
-                            }
+                            {categories.map(c =>
+                                <Dropdown.Item id={c.name} eventKey={c.name} key={c.name}
+                                    style={{ backgroundColor: getSelectorCategoryColor(c) }}>
+                                    {c.name}
+                                </Dropdown.Item>)}
                         </DropdownButton>
                     </div>
                 </Col>
@@ -63,9 +75,16 @@ export default function Experience()
 
             <Row>
                 <Col>
-                    {cases.map(c =>
+                    {cases.filter(c => c.category === activeCategory).map(c =>
                         <div id={c.name} key={c.name} className="caseDiv"
-                            style={{ backgroundColor: activeCategory === c.category ? catColorMap.get(activeCategory) : 'white' }} >
+                            style={{ backgroundColor: getCategoryColor(c) }} >
+                            {c.name}
+                        </div>)
+                    }
+
+                    {cases.filter(c => c.category !== activeCategory).map(c =>
+                        <div id={c.name} key={c.name} className="caseDiv"
+                            style={{ backgroundColor: 'white' }} >
                             {c.name}
                         </div>)
                     }

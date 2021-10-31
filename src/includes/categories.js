@@ -1,19 +1,19 @@
 export const categories = [
-    { name: "Design companies", color: "#8cfa4c" },
-    { name: "Retail", color: "#8cfa4c" },
-    { name: "Food and Beverages", color: "#8cfa4c" },
-    { name: "Medical + Cosmetics", color: "#8cfa4c" },
-    { name: "Media + Culture", color: "#8cfa4c" },
-    { name: "Conference + Hotel + Real Estate", color: "#8cfa4c" },
-    { name: "Placebranding + Travel", color: "#8cfa4c" },
-    { name: "Unions", color: "#8cfa4c" },
-    { name: "Education", color: "#8cfa4c" },
-    { name: "Finance", color: "#8cfa4c" },
-    { name: "Tele", color: "#8cfa4c" },
-    { name: "Officials", color: "#8cfa4c" },
-    { name: "Funds", color: "#8cfa4c" },
-    { name: "NGOs", color: "#8cfa4c" },
-    { name: "Transport", color: "#8cfa4c" }
+    { name: "Design companies", color: "#00ff6a" },
+    { name: "Retail", color: "#00ff6a" },
+    { name: "Food and Beverages", color: "#00ff6a" },
+    { name: "Medical + Cosmetics", color: "#00ff6a" },
+    { name: "Media + Culture", color: "#00ff6a" },
+    { name: "Conference + Hotel + Real Estate", color: "#00ff6a" },
+    { name: "Placebranding + Travel", color: "#00ff6a" },
+    { name: "Unions", color: "#00ff6a" },
+    { name: "Education", color: "#00ff6a" },
+    { name: "Finance", color: "#00ff6a" },
+    { name: "Tele", color: "#00ff6a" },
+    { name: "Officials", color: "#00ff6a" },
+    { name: "Funds", color: "#00ff6a" },
+    { name: "NGOs", color: "#00ff6a" },
+    { name: "Transport", color: "#00ff6a" }
 ]
 
 export const cases = [

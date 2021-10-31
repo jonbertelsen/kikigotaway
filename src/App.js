@@ -6,7 +6,9 @@ import Work from './components/Work';
 import Footer from './components/Footer';
 import About from './components/About';
 import Shop from './components/Shop';
-import { Accordion, Container } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
+import Accordion from "./components/Accordion";
+import Contact from './components/Contact';
 
 function App()
 {
@@ -14,26 +16,14 @@ function App()
     <Container>
       <Header />
       <Slider />
-      <Accordion flush>
-        <Accordion.Item eventKey="0">
-          <Accordion.Header>Work</Accordion.Header>
-          <Accordion.Body>
-            <Work />
-          </Accordion.Body>
-        </Accordion.Item>
-        <Accordion.Item eventKey="1">
-          <Accordion.Header>About</Accordion.Header>
-          <Accordion.Body>
-            <About />
-          </Accordion.Body>
-        </Accordion.Item>
-        <Accordion.Item eventKey="2">
-          <Accordion.Header>Shop</Accordion.Header>
-          <Accordion.Body>
-            <Shop />
-          </Accordion.Body>
-        </Accordion.Item>
-      </Accordion>
+
+      <div className="accordionContainer">
+        <Accordion title="Work" contentComponent={Work} sectionClass="accordion__section" accordionClass="accordion" titleClass="accordion__title" contentClass="accordion__content" arrowWidth="10" activeClass="active" />
+        <Accordion title="About" contentComponent={About} sectionClass="accordion__section" accordionClass="accordion" titleClass="accordion__title" contentClass="accordion__content" arrowWidth="10" activeClass="active" />
+        <Accordion title="Contact" contentComponent={Contact} sectionClass="accordion__section" accordionClass="accordion" titleClass="accordion__title" contentClass="accordion__content" arrowWidth="10" activeClass="active" />
+        <Accordion title="Shop" contentComponent={Shop} sectionClass="accordion__section" accordionClass="accordion" titleClass="accordion__title" contentClass="accordion__content" arrowWidth="10" activeClass="active" />
+      </div>
+
       <Footer />
     </Container>
   );
