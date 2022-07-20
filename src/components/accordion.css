@@ -2,7 +2,7 @@
 
 .accordionContainer {
   border-top: 2px solid black;
-  border-bottom: 2px solid black;
+  /*border-bottom: 2px solid black;*/
 }
 
 /* Style the accordion section */
@@ -20,6 +20,7 @@
   display: flex;
   align-items: center;
   border-top: 2px solid black;
+  border-bottom: none;
   border-left: none;
   border-right: none;
   outline: none;
@@ -34,6 +35,7 @@
   display: flex;
   align-items: center;
   border-top: 1px solid black;
+  border-bottom: none;
   border-left: none;
   border-right: none;
   outline: none;
@@ -87,5 +89,6 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  padding: 18px;
+  padding-top: 18px;
+  padding-bottom: 18px;
 }

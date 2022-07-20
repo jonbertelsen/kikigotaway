@@ -16,7 +16,6 @@ export default function BurgerMenu(props)
 
             {showBurgermenu ? <List size={32} onClick={toggleMenu} className={showBurgermenu} /> : <XLg size={28} onClick={toggleMenu} />}
 
-
         </div >
     );
 }

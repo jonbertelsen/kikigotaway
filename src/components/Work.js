@@ -13,6 +13,7 @@ export default function Work()
                 <div className="accordionContainer">
                     <Accordion title="The Archive House" contentComponent={TheArchiveHouse} sectionClass="accordion__section" accordionClass="accordion__small" titleClass="accordion__title__small" contentClass="accordion__content" arrowWidth="8" activeClass="active__small" />
                     <Accordion title="Odense" contentComponent={Odense} sectionClass="accordion__section" accordionClass="accordion__small" titleClass="accordion__title__small" contentClass="accordion__content" arrowWidth="8" activeClass="active__small" />
+                    <div style={{ height: '20px' }}></div>
                 </div>
             </Col>
         </Row>

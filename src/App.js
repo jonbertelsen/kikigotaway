@@ -18,10 +18,10 @@ function App()
       <Slider />
 
       <div className="accordionContainer">
-        <Accordion title="Work" contentComponent={Work} sectionClass="accordion__section" accordionClass="accordion" titleClass="accordion__title" contentClass="accordion__content" arrowWidth="10" activeClass="active" />
-        <Accordion title="About" contentComponent={About} sectionClass="accordion__section" accordionClass="accordion" titleClass="accordion__title" contentClass="accordion__content" arrowWidth="10" activeClass="active" />
-        <Accordion title="Contact" contentComponent={Contact} sectionClass="accordion__section" accordionClass="accordion" titleClass="accordion__title" contentClass="accordion__content" arrowWidth="10" activeClass="active" />
-        <Accordion title="Shop" contentComponent={Shop} sectionClass="accordion__section" accordionClass="accordion" titleClass="accordion__title" contentClass="accordion__content" arrowWidth="10" activeClass="active" />
+        <Accordion title="Work" contentComponent={Work} sectionClass="accordion__section" accordionClass="accordion" titleClass="accordion__title" contentClass="accordion__content" arrowWidth="15" activeClass="active" />
+        <Accordion title="About" contentComponent={About} sectionClass="accordion__section" accordionClass="accordion" titleClass="accordion__title" contentClass="accordion__content" arrowWidth="15" activeClass="active" />
+        <Accordion title="Contact" contentComponent={Contact} sectionClass="accordion__section" accordionClass="accordion" titleClass="accordion__title" contentClass="accordion__content" arrowWidth="15" activeClass="active" />
+        <Accordion title="Shop" contentComponent={Shop} sectionClass="accordion__section" accordionClass="accordion" titleClass="accordion__title" contentClass="accordion__content" arrowWidth="15" activeClass="active" />
       </div>
 
       <Footer />
