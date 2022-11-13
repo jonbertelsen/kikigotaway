@@ -1,12 +1,116 @@
 /* Kiki Gotaway styles */
 
+body {
+  font-family: mabry-light-pro!important;
+  font-size: 16px!important;
+}
+
+@media (min-width:768px) {
+  h1 { font-size: 42px!important; }
+  h2 { font-size: 28px!important; }
+  h3 { font-size: 22px!important; }
+  body { font-size: 16px!important;}
+}
+
+@media (min-width:1024px) {
+  h1 { font-size: 48px!important; }
+  h2 { font-size: 36px!important; }
+  h3 { font-size: 28px!important; }
+  body { font-size: 18px!important;}
+}
+
+@media (min-width:1280px) {
+  h1 { font-size: 60px!important; }
+  h2 { font-size: 48px!important; }
+  h3 { font-size: 36px!important; }
+  body { font-size: 22px!important;}
+  }
+
+/* Frontpage header */
+
+.frontpageImageDiv {
+  position: relative;
+  width:100%;
+  z-index: 1;
+}
+
+.frontpageImage {
+  top:0px;
+  width:100%;
+  object-fit: contain;
+}
+
+.frontpage-slogan {
+  position: absolute;
+  top: 30%;
+  width: 55.0%;
+  margin-left: -25%;
+  left:50%;
+  z-index: 10;
+}
+
+.frontpage-cta-emblem {
+  width: calc(334px/6 + 20.0vw);
+  height: calc(156px/6 + 10.0vw);
+  margin-left: 25%;
+
+}
+/* Tickers */
+
+.ticker-logo-line {
+  position: absolute;
+  top: 1.0rem;
+  height:2.0rem;
+  background: rgb(255, 255, 255);
+  left:0px;
+  width:100%;
+  z-index: 10;
+  font-family: mabry-bold-pro;
+  white-space: nowrap;
+  font-size: 1.2rem;
+
+}
+
+.ticker-tag-line {
+  position: absolute;
+  bottom: 1.0rem;
+  height:2.0rem;
+  background: rgb(0,255,106);
+  left:0px;
+  width:100%;
+  z-index: 10;
+  font-family: mabry-bold-pro;
+  font-size: 1.2rem;
+  white-space: nowrap;
+
+}
+
+.frontpage-tagline {
+  font-family: Roslindale;
+  color: #00ff6a;
+  font-size: calc(1.0rem + 5.0vw );
+  text-align: center;
+  margin-top: calc(1.0rem + 1.0vw);
+  line-height: calc(1.0rem + 5.0vw );
+  height: 20vw;
+  left:50%;
+  z-index: 10;
+}
+
+
+
 /* Home made accordion */
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+.accordionMainContainer {
+/*  margin-top:1119px;*/
+  background-color: white;
 }
+
+
+.accordionBorder {
+  border-top: solid 2px black;
+}
+
 
 /* Other stuff */
 
@@ -14,30 +118,14 @@
   font-weight: bold;
 }
 
-h1 {
-  font-size: 36px !important;
-}
-
-h2 {
-  font-size: 20px !important;
-}
-
-.burgermenu {
-  height: 30px;
-  margin-right: 10px;
-}
-
 .menu {
+  margin-top: 100px;
   margin-right: 20px;
 }
 
-.slider {
-  border-top: 2px solid black;
-}
-
 .menuitem {
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
+ /* border-top: 2px solid black;
+  border-bottom: 2px solid black;*/
   height: 90px;
   padding: 20px;
 }
@@ -96,4 +184,12 @@ h2 {
 
 .clear {
   clear: both;
+}
+
+.footer-styling {
+  margin-top: 3vw!important;
+  width: 80%;
+  margin-left: 10%!important;
+  margin-right: 10%;
+
 }

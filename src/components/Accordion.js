@@ -1,5 +1,7 @@
-import React, { useState, useRef } from "react";
-import Chevron from "../components/Chevron";
+import React, { useState, useRef, useEffect } from "react";
+import Arrow from "./Arrow";
+import ArrowSmall from "./ArrowSmall";
+
 
 import "./accordion.css";
 
@@ -8,7 +10,7 @@ export default function Harmonika(props)
 
   const [setActive, setActiveState] = useState("");
   const [setHeight, setHeightState] = useState("0px");
-  const [setRotate, setRotateState] = useState("accordion__icon");
+  const [setRotate, setRotateState] = useState("");
 
   const title = props.title
   const ContentComponent = props.contentComponent
@@ -18,8 +20,14 @@ export default function Harmonika(props)
   const contentClass = props.contentClass
   const arrowWidth = props.arrowWidth
   const activeClass = props.activeClass
+  const accordion_text = props.accordionText;
 
   const content = useRef(null);
+
+  useEffect(() =>
+  {
+    (props.accordionClass === "accordion") ? setRotateState("accordion_icon") : setRotateState("accordion_icon_small")
+  }, [])
 
   function toggleAccordion()
   {
@@ -27,24 +35,40 @@ export default function Harmonika(props)
     setHeightState(
       setActive === activeClass ? "0px" : "none"
     );
-    setRotateState(
-      setActive === activeClass ? "accordion__icon" : "accordion__icon rotate"
-    );
+
+    accordionClass === "accordion" ?
+      setRotateState(
+        setActive === activeClass ? "accordion_icon" : "accordion_icon rotate"
+      ) :
+      setRotateState(
+        setActive === activeClass ? "accordion_icon_small" : "accordion_icon_small rotate"
+      )
   }
 
   return (
     <div className={sectionClass}>
 
       <button className={`${accordionClass} ${setActive}`} onClick={toggleAccordion}>
-        <span className={titleClass}>{title}</span>
-        <Chevron className={`${setRotate}`} width={arrowWidth} fill={"black"} />
+        {accordionClass === "accordion" &&
+          <h1 className={titleClass}>{title}</h1>
+        }
+        {accordionClass === "accordion" &&
+          <Arrow className={`${setRotate}`} width={arrowWidth} fill={'black'} />
+        }
+        {accordionClass === "accordion_small" &&
+          <ArrowSmall className={`${setRotate}`} width={arrowWidth} fill={'black'} />
+        }
+        {accordionClass === "accordion_small" &&
+          <h2 className={titleClass}>{title}</h2>
+        }
       </button>
+
       <div
         ref={content}
         style={{ maxHeight: `${setHeight}` }}
         className={contentClass}
       >
-        <div className="accordion__text">
+        <div className={accordion_text}>
           <ContentComponent />
         </div>
       </div>

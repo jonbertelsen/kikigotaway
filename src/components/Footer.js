@@ -1,28 +1,36 @@
-import { Row, Col } from "react-bootstrap";
+import {Row, Col} from "react-bootstrap";
 
-export default function Footer()
-{
+export default function Footer() {
     return (
-        <Row className="pt-3 mt-4 ">
-
-            <Col sm={4}>
-                <h3>Kiki Gotaway</h3>
-                <p>Social Club<br />
-                    Classensgade No 13 kld th<br />
-                    2100 Copenhagen Ø / Denmark<br />
+        <Row className="footer-styling">
+            <Col lg={5}>
+                <h1>Kiki Gotaway</h1>
+                <h3>Visit Kiki Gotaway Social Club</h3>
+                <p>Classensgade No 13, kld th<br/>
+                    2100 Copenhagen Ø / Denmark<br/>
                     Open by appointment</p>
+
+                <h3>Contact Kiki</h3>
+                <p>Mail: info@kikigotaway.dk<br/>
+                    Phone: 21 63 67 68</p>
+
+                <h3>Kiki numerology</h3>
+                <p>Kiki Gotaway v. Olga Bastian Cvr. №: 12345<br/>
+                    Kiki Gotaway v. Heidi Volke Cvr. №: 12345 </p>
             </Col>
-            <Col sm={4}>
-                <h3>When in doubt:<br />
-                    Call Kiki</h3>
-                <p>Heidi: 31 31 67 57 / Olga: 21 63 67 68</p>
+            <Col lg={2}>
+
             </Col>
-            <Col sm={4}>
-                <h3>Kiki by numbers</h3>
-                <p>Kiki Gotaway v.Olga Bastian Cvr.No: 12345<br />
-                    Kiki Gotaway v.Heidi Volke Cvr.No: 12345</p>
+            <Col lg={5}>
+                <h3>LinkedIn -></h3>
+                <h3>Instagram -></h3>
+                <h3>All right Reserved</h3>
+                <br/>
+                <br/>
+                <p>This webpage is CO2 neutral</p>
             </Col>
 
         </Row>
     );
 }
+

@@ -1,0 +1,53 @@
+/*
+ * Web Fonts from colophon-foundry.org
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Colophon Foundry. The fonts are protected under domestic and international trademark and
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2022 Colophon Foundry
+ *
+ * Licenced to Olga Bastian Kiki Gotaway
+ */
+
+ @font-face {
+    font-family: 'mabry-regular-pro';
+    src: url('mabry-regular-pro.eot');
+    src: url('mabry-regular-pro.eot?#iefix') format('embedded-opentype'),
+         url('mabry-regular-pro.woff2') format('woff2'),
+         url('mabry-regular-pro.woff') format('woff'),
+         url('mabry-regular-pro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+ }
+
+ @font-face {
+    font-family: 'mabry-light-pro';
+    src: url('mabry-light-pro.eot');
+    src: url('mabry-light-pro.eot?#iefix') format('embedded-opentype'),
+         url('mabry-light-pro.woff2') format('woff2'),
+         url('mabry-light-pro.woff') format('woff'),
+         url('mabry-light-pro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+ }
+
+ @font-face {
+    font-family: 'mabry-bold-pro';
+    src: url('mabry-bold-pro.eot');
+    src: url('mabry-bold-pro.eot?#iefix') format('embedded-opentype'),
+         url('mabry-bold-pro.woff2') format('woff2'),
+         url('mabry-bold-pro.woff') format('woff'),
+         url('mabry-bold-pro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    src: url('Roslindale-DisplayCondensedRegular.woff2') format("woff2"),
+         url('Roslindale-DisplayCondensedRegular.woff') format("woff");
+    font-family: 'Roslindale';
+    font-style: normal;
+    font-weight: normal;
+  }

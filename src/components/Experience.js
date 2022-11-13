@@ -35,7 +35,7 @@ export default function Experience()
     }
 
     return (
-        <Row>
+        <Row className="content_block">
 
             <h1>Experience</h1>
 
